@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(23, 27, 36);
+    font-family: 'lato', sans-serif;
+}
+
+.topdiv {
+    background-color: rgb(34.5, 40.5, 54);
+    padding: 40px;
+    border: solid rgb(100, 200, 200);
+    border-width: 0 0 5px;
+}
+
+.maindiv {
+    margin: 0 7.5%;
+    width: 100%;
+    position: fixed;
+    top: 30%;
+}
+
+.introduction {
+    font-weight: bolder;
+    color: rgb(240, 240, 255);
+    font-size: 125%;
+    border-radius: 25px;
+    width: 25%;
+    padding: 30px;
+}
+
+.introduction h1 {
+    font-size: 300%;
+    position: relative;
+    right: 4px;
+}
