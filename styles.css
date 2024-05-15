@@ -9,29 +9,51 @@ body {
 
 .topdiv {
     background-color: rgb(34.5, 40.5, 54);
-    padding: 40px;
+    justify-content: right;
+    padding: 30px 30px 30px 1px;
     border: solid rgb(100, 200, 200);
     border-width: 0 0 5px;
+    display: flex;
+}
+
+.button {
+    padding: 0 5% 0 0;
+    background-color: transparent;
+    border: 0;
+    color: rgb(240, 240, 255);
+    font-weight: bolder;
+    font-size: 140%;
+    text-align: right;
 }
 
 .maindiv {
-    margin: 0 7.5%;
-    width: 100%;
-    position: fixed;
-    top: 30%;
+    width: auto;
+    margin-top: 10%;
+    margin-left: 7.5%;
 }
 
 .introduction {
     font-weight: bolder;
     color: rgb(240, 240, 255);
     font-size: 125%;
-    border-radius: 25px;
-    width: 25%;
-    padding: 30px;
+    width: auto;
 }
 
 .introduction h1 {
     font-size: 300%;
     position: relative;
     right: 4px;
+}
+
+#About {
+    margin: 17.5% 7.5% 0 0;
+    border: solid rgb(100, 200, 200);
+    border-width: 5px 0 0;
+    padding: 2%;
+    color: rgb(240, 240, 255);
+    font-size: 120%;
+}
+
+#About h2 {
+    margin-bottom: 10px;
 }

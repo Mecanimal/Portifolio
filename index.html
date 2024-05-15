@@ -1,9 +1,3 @@
-<!-- 
-    hey! what are you doing here? you aren't supposed to be seeing this!
-    JK, it's fine. This is the code for my portfolio page, i mean...
-    ...the actual code is in the script.js file but you get what i'm trying to say.
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,14 +13,28 @@
 
     <div class="main">
         <div class="topdiv">
-            <a href=""></a>
+            <button class="button" data-target="About" onclick="scrollToSection(this)">About</button>
+            <button class="button" data-target="Skills" onclick="scrollToSection(this)">Skills</button>
+            <button class="button" data-target="Experience" onclick="scrollToSection(this)">Experience</button>
+            <button class="button" data-target="Projects" onclick="scrollToSection(this)">Projects</button>
+            <button class="button" data-target="Contact" onclick="scrollToSection(this)">Contact</button>
         </div>
         <div class="maindiv">
             <div class="introduction">
-                <h5>hi there, i'm</h5>
-                <h1>Pedro Lippaus</h1>
-                <h3>Front-end developer</h3>
+                <div>
+                    <h5>hi there, i'm</h5>
+                    <h1>Pedro Lippaus</h1>
+                    <h3>Front-end developer</h3>
+                </div>
+                <img src="" alt="">
             </div>
+            <section id="About">
+                <h2>About me</h2>
+                <p>My name is Pedro Lippaus and I am currently studying for a technical degree in mechanics at <br>
+                Instituto Federal do Espírito Santo (IFES). I am interested not only in mechanics but also in <br>
+                front-end programming. I work with HTML CSS and Javascript and am also looking forward to <br>
+                using javascript libraries such as Next and React</p>
+            </section>
         </div>
         <div>
 
