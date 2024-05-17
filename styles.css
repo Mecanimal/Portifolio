@@ -7,6 +7,10 @@ body {
     font-family: 'lato', sans-serif;
 }
 
+.flex {
+    display: flex;
+}
+
 .topdiv {
     background-color: rgb(34.5, 40.5, 54);
     justify-content: right;
@@ -24,19 +28,34 @@ body {
     font-weight: bolder;
     font-size: 140%;
     text-align: right;
+    position: relative;
+}
+
+@keyframes moveButton {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-200px, -1000px);
+    }
+}
+
+.topdiv .button.animate {
+    animation: moveButton 0.8s forwards;
 }
 
 .maindiv {
     width: auto;
-    margin-top: 10%;
-    margin-left: 7.5%;
+    margin: 10% 0 10% 7.5%;
 }
 
 .introduction {
     font-weight: bolder;
     color: rgb(240, 240, 255);
-    font-size: 125%;
+    font-size: 250%;
     width: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .introduction h1 {
@@ -45,15 +64,97 @@ body {
     right: 4px;
 }
 
-#About {
-    margin: 17.5% 7.5% 0 0;
+.profile {
+    height: 360px;
+    width: 360px;  
+    border: solid 5px rgb(100, 200, 200);
+    border-radius: 50%;
+    padding: 30px;
+    margin-right: 7.5%;
+    position: relative;
+    bottom: 40px
+}
+
+.reminder {
+    display: flex;
+    color: rgb(100, 200, 200);
+    font-size: larger;
+}
+
+.arrowdown {
+    color: rgb(100, 200, 200);
+}
+
+#about {
+    margin: 8% 0 0;
     border: solid rgb(100, 200, 200);
     border-width: 5px 0 0;
     padding: 2%;
     color: rgb(240, 240, 255);
-    font-size: 120%;
+    font-size: 195%;
+    max-width: 42.5%;
 }
 
-#About h2 {
-    margin-bottom: 10px;
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    color: rgb(240, 240, 255);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(34.5, 40.5, 54);
+    margin-right: 30px;
+}
+
+h2 {
+    margin: 15px 0;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+#about p {
+    padding: 20px;
+    background-color: rgb(34.5, 40.5, 54);
+    text-align: justify;
+}
+
+#skills {
+    max-width: 60%;
+    border: solid rgb(100, 200, 200);
+    border-width: 0px 0px 5px 5px;
+    margin: 8% 7.5% 0 0;
+    padding: 2%;
+    color: rgb(240, 240, 255);
+    font-size: 136%;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-right: 4%;
+    font-size: 175%;
+}
+
+.baloon {
+    position: relative;
+    bottom: 60px;
+}
+
+.skill {
+    padding: 15px;
+    background-color: rgb(34.5, 40.5, 54);
+    margin: 4% 4% 0 0;
+    width: 50%
+}
+
+.subsubtitle {
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    gap: 4%;
+    border-bottom: solid 4px rgb(240, 240, 255);
+    margin-bottom: 4%;
+    padding: 10px;
 }
