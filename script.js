@@ -6,16 +6,3 @@ document.querySelectorAll('.button').forEach(button => {
         });
     });
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-    const button = document.getElementById('button');
-
-    button.addEventListener('click', () => {
-        button.classList.add('animate');
-        console.log(ahahahahahahha)
-
-        button.addEventListener('animationend', () => {
-            button.classList.remove('animate');
-        }, { once: true });
-    });
-});
